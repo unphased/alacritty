@@ -196,7 +196,7 @@ impl Window {
         Window::platform_window_init();
         let window = WindowBuilder::new()
             .with_title(title)
-            .with_transparency(true)
+            .with_transparency(false)
             .with_decorations(window_config.decorations());
         let context = ContextBuilder::new()
             .with_vsync(true);
